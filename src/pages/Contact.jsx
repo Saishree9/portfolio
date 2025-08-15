@@ -11,7 +11,7 @@ export default function Contact() {
         {/* Phone */}
         <a
           href="tel:+918762577498"
-          className="p-1 bg-gray-800 rounded-full hover:bg-pink-500 transition duration-300"
+          className="p-1 bg-gray-800 rounded-full hover:bg-[#FAEBD7] hover:text-gray-900 hover:p-1.5 transition duration-300"
           title="Call Me"
         >
           <FaPhone className="-scale-x-100" />
@@ -20,7 +20,7 @@ export default function Contact() {
         {/* Email */}
         <a
           href="mailto:saishree0312@gmail.com"
-          className="p-1 bg-gray-800 rounded-full hover:bg-pink-500 transition duration-300"
+          className="p-1 bg-gray-800 rounded-full hover:bg-[#FAEBD7] hover:text-gray-900 hover:p-1.5 transition duration-300"
           title="Send Email"
         >
           <FaEnvelope />
@@ -31,7 +31,7 @@ export default function Contact() {
           href="https://wa.me/918762577498"
           target="_blank"
           rel="noreferrer"
-          className="p-1 bg-gray-800 rounded-full hover:bg-pink-500 transition duration-300"
+          className="p-1 bg-gray-800 rounded-full hover:bg-[#FAEBD7] hover:text-gray-900 hover:p-1.5 transition duration-300"
           title="Chat on WhatsApp"
         >
           <FaWhatsapp />
@@ -42,7 +42,7 @@ export default function Contact() {
           href="https://github.com/Saishree9"
           target="_blank"
           rel="noreferrer"
-          className="p-1 bg-gray-800 rounded-full hover:bg-pink-500 transition duration-300"
+          className="p-1 bg-gray-800 rounded-full hover:bg-[#FAEBD7] hover:text-gray-900 hover:p-1.5 transition duration-300"
           title="View My GitHub"
         >
           <FaGithub />
