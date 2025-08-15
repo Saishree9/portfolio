@@ -17,7 +17,7 @@ export default function Projects() {
             href={p.link}
             target="_blank"
             rel="noreferrer"
-            className="bg-gray-800 p-6 rounded-lg hover:bg-pink-500 hover:scale-105 transition duration-300 text-center"
+            className="bg-gray-800 p-6 rounded-lg hover:bg-[#FAEBD7] hover:scale-105 transition duration-300 text-center hover:text-gray-900"
           >
             <h3 className="text-sm md:text-xl font-semibold">{p.name}</h3>
           </a>

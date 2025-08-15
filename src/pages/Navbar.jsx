@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className="fixed w-full bg-gray-800 shadow-lg z-50">
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-pink-400">Saishree L</h1>
+        <h1 className="text-2xl font-bold text-[#FAEBD7]">Saishree L</h1>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
@@ -19,7 +19,7 @@ export default function Navbar() {
                 to={link.toLowerCase()}
                 smooth
                 duration={500}
-                className="hover:text-pink-400 cursor-pointer transition duration-300"
+                className="hover:text-[#FAEBD7] cursor-pointer transition duration-300"
               >
                 {link}
               </Link>
@@ -43,7 +43,7 @@ export default function Navbar() {
                 smooth
                 duration={500}
                 onClick={() => setMenuOpen(false)}
-                className="hover:text-pink-400 cursor-pointer transition duration-300"
+                className="hover:text-[#FAEBD7] cursor-pointer transition duration-300"
               >
                 {link}
               </Link>

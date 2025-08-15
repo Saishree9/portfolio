@@ -51,7 +51,7 @@ export default function Experience() {
           >
             <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-[80%] hover:scale-105 transition duration-300">
               <h3 className="text-sm md:text-xl font-bold">{job.role}</h3>
-              <p className="text-pink-400 text-sm md:text-base">
+              <p className="text-[#FAEBD7] text-sm md:text-base">
                 {job.company} | {job.date}
               </p>
               <ul className="list-disc list-inside mt-2 text-gray-300 text-xs md:text-base">
