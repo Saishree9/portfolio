@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../assets/myImg2.jpg"
 
 export default function About() {
   return (
@@ -6,7 +7,7 @@ export default function About() {
       {/* Left Image */}
       <div className="flex-1">
         <img
-          src="/images/about.jpg"
+          src={img}
           alt="About Saishree"
           className="rounded-lg shadow-lg hidden sm:block"
         />
