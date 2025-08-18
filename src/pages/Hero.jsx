@@ -34,7 +34,8 @@ export default function Hero() {
             Contact Me
           </Link>
           <a
-            href="https://drive.google.com/uc?export=download&id=1YASHlciLv8wFnL1mWSZHIF7u4k0yBTDv"
+            href="https://drive.google.com/uc?export=download&id=1B6LmhTY2qtAlYUgvD3N6AG4YCeN_zwit"
+         
             target="_blank"
             rel="noreferrer"
             className="px-5 py-2 rounded-lg shadow-lg border border-[#FAEBD7] text-[#FAEBD7] hover:scale-105 transition duration-300 cursor-pointer"

@@ -7,8 +7,8 @@ export default function Navbar() {
   const links = ["Home", "About", "Skills", "Experience", "Projects", "Contact"];
 
   return (
-    <nav className="fixed w-full bg-gray-800 shadow-lg z-50">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+    <nav className=" bg-gray-800 shadow-lg z-50 ">
+      <div className="px-4 py-3 flex justify-between items-center">
         <h1 className="text-2xl font-bold text-[#FAEBD7]">Saishree L</h1>
 
         {/* Desktop Menu */}

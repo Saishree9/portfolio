@@ -91,7 +91,7 @@ export default function Skills() {
       {/* Modal */}
       {selectedSkill && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center px-4 z-50">
-          <div className="bg-white rounded-2xl shadow-lg max-w-md w-full p-6 relative">
+          <div className="bg-[#FAEBD7] rounded-2xl shadow-lg max-w-md w-full p-6 relative">
             {/* Close button */}
             <button
               className="absolute top-3 right-3 text-gray-500 hover:text-black text-xl"
@@ -100,7 +100,7 @@ export default function Skills() {
               ✖
             </button>
             {/* Modal Content */}
-            <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+            <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-gray-900">
               {selectedSkill.icon} {selectedSkill.name}
             </h3>
             <ul className="list-disc list-inside space-y-2 text-gray-700">
