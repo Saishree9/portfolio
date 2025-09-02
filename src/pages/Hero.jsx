@@ -34,7 +34,7 @@ export default function Hero() {
             Contact Me
           </Link>
           <a
-            href="https://drive.google.com/uc?export=download&id=1B6LmhTY2qtAlYUgvD3N6AG4YCeN_zwit"
+            href="https://drive.google.com/uc?export=download&id=1C6UiV3Ux7OkkIwUI75Jibjqwa4EYhN_C"
          
             target="_blank"
             rel="noreferrer"
