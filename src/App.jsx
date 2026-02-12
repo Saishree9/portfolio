@@ -9,7 +9,7 @@ import Contact from "./pages/Contact";
 
 const App = () => {
   return (
-    <div className="bg-gray-900 text-white max-w-7xl mx-auto">
+    <div className="bg-white text-gray-900 max-w-7xl mx-auto">
       <Navbar />
       <Hero />
       <About />
@@ -17,6 +17,9 @@ const App = () => {
       <Experience />
       <Projects />
       <Contact />
+      <footer className="border-t border-gray-200 py-6 text-center text-gray-500 text-sm mt-16">
+        © 2026 Saishree L. All rights reserved.
+      </footer>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import img from "../assets/myImg1.jpg"
+import img from "../assets/myImg1.jpg";
 
 export default function Hero() {
   return (
@@ -11,17 +11,22 @@ export default function Hero() {
       {/* Left Content */}
       <div className="flex-1 flex flex-col items-center md:items-start">
         <h1 className="text-2xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight mt-10">
-          Hi, I'm <span className="text-[#FAEBD7]">Saishree L</span>
+          Hi, I'm <span className="text-[#d3ae7f]">Saishree L</span>
         </h1>
-        <p className="text-base sm:text-lg md:text-xl mb-6 max-w-xl">
-          Front-End Developer | React Developer
+        <p className="text-lg md:text-xl mb-6 max-w-xl text-gray-600">
+          Front-End Developer with 2+ years of experience building
+          high-performance React applications and scalable UI systems.
+          Passionate about clean architecture, performance optimization, and
+          user-focused design.
         </p>
+
         <div className="flex flex-wrap justify-center md:justify-start gap-4">
           <Link
             to="projects"
             smooth
             duration={500}
-            className="px-5 py-2 rounded-lg shadow-lg border border-[#FAEBD7] text-[#FAEBD7] hover:scale-105 transition duration-300 cursor-pointer"
+           className="px-6 py-3 bg-slate-900 text-white rounded-md hover:bg-slate-700 transition"
+
           >
             View Projects
           </Link>
@@ -29,16 +34,15 @@ export default function Hero() {
             to="contact"
             smooth
             duration={500}
-            className="px-5 py-2 rounded-lg shadow-lg border border-[#FAEBD7] text-[#FAEBD7] hover:scale-105 transition duration-300 cursor-pointer"
+            className="px-5 py-2 rounded-lg shadow-lg border border-[#FAEBD7] text-[#d3ae7f] hover:scale-105 transition duration-300 cursor-pointer"
           >
             Contact Me
           </Link>
           <a
-            href="https://drive.google.com/uc?export=download&id=1C6UiV3Ux7OkkIwUI75Jibjqwa4EYhN_C"
-         
+            href="https://drive.google.com/uc?export=download&id=16ILIgqI3qIupSnaElGYP6_YaKC9Bc3He"
             target="_blank"
             rel="noreferrer"
-            className="px-5 py-2 rounded-lg shadow-lg border border-[#FAEBD7] text-[#FAEBD7] hover:scale-105 transition duration-300 cursor-pointer"
+            className="px-5 py-2 rounded-lg shadow-lg border border-[#FAEBD7] text-[#d3ae7f] hover:scale-105 transition duration-300 cursor-pointer"
           >
             Download Resume
           </a>
