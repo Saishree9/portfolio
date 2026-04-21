@@ -3,33 +3,32 @@ import React from "react";
 const skills = [
   {
     title: "Frontend",
-    items:
-      "React.js (Hooks, Context API, Redux), JavaScript (ES6+), HTML5, CSS3",
+    icon: "⚛️",
+    items: ["React.js", "JavaScript (ES6+)", "HTML5", "CSS3"],
   },
   {
-    title: "Backend & Database",
-    items:
-      "Node.js, Express.js, MongoDB, RESTful API Design",
+    title: "State Management",
+    icon: "🔄",
+    items: ["Redux", "Context API", "React Hooks"],
   },
   {
     title: "Styling & UI",
-    items:
-      "Tailwind CSS, Material UI (MUI), Responsive Design, Figma-to-Code",
+    icon: "🎨",
+    items: ["Tailwind CSS", "Material UI (MUI)", "Responsive Design", "Figma-to-Code"],
   },
   {
     title: "Tools & Workflow",
-    items:
-      "Git, GitHub, Postman, Swagger, Agile Scrum",
+    icon: "🛠️",
+    items: ["Git & GitHub", "Postman", "Swagger", "Agile Scrum"],
   },
 ];
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 px-6 bg-white">
+    <section id="skills" className="py-24 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
 
-        {/* Section Label */}
-        <p className="text-sm uppercase tracking-widest text-[#d3ae7f] mb-2 text-center">
+        <p className="text-xs uppercase tracking-[0.25em] text-[#d3ae7f] mb-3 text-center font-semibold">
           Expertise
         </p>
 
@@ -37,22 +36,30 @@ export default function Skills() {
           Technical Skills
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-6">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="group relative bg-gray-50 p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition duration-300"
+              className="group relative bg-gray-50 p-8 rounded-2xl border border-gray-200 hover:border-[#d3ae7f] hover:shadow-md transition duration-300 overflow-hidden"
             >
-              {/* Accent Line */}
-              <div className="absolute left-0 top-0 h-full w-1 bg-[#d3ae7f] rounded-l-2xl opacity-0 group-hover:opacity-100 transition duration-300"></div>
+              {/* Accent bar on hover */}
+              <div className="absolute left-0 top-0 h-full w-1 bg-[#d3ae7f] rounded-l-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-              <h3 className="text-xl font-semibold text-slate-900 mb-4">
-                {skill.title}
-              </h3>
+              <div className="flex items-center gap-3 mb-5">
+                <span className="text-2xl">{skill.icon}</span>
+                <h3 className="text-lg font-bold text-slate-900">{skill.title}</h3>
+              </div>
 
-              <p className="text-gray-600 leading-7">
-                {skill.items}
-              </p>
+              <div className="flex flex-wrap gap-2">
+                {skill.items.map((item) => (
+                  <span
+                    key={item}
+                    className="px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-600 font-medium group-hover:border-[#e6c79d] transition duration-300"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
         </div>
