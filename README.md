@@ -1,12 +1,80 @@
-# React + Vite
+# Saishree L — Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website showcasing 2+ years of React.js development experience across healthcare SaaS and finance automation domains.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👩‍💻 About
 
-## Expanding the ESLint configuration
+Frontend Developer specialising in React.js — building responsive dashboards, integrating REST APIs, and architecting modular UI systems. Background in Civil Engineering (CGPA 9.3) brings a systems-thinking approach to scalable, maintainable frontend architecture.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|---|---|
+| **Frontend** | React.js, JavaScript (ES6+), HTML5, CSS3 |
+| **State Management** | Redux, Context API, React Hooks |
+| **Styling & UI** | Tailwind CSS, Material UI (MUI), Responsive Design, Figma-to-Code |
+| **Tools & Workflow** | Git & GitHub, Postman, Swagger, Agile Scrum |
+
+---
+
+## 💼 Experience
+
+### Front-End Developer — Orbit Core Tech *(June 2024 – Present)*
+- Developed and optimised 5+ production-grade responsive interfaces using React.js and Tailwind CSS
+- Built an internal Finance & Invoice Management System UI with invoice generation, payment tracking, and client management
+- Designed reusable modular React components, reducing development time for new features
+- Collaborated in an Agile Scrum team across sprint planning, UI reviews, and iterative development
+
+### Agile Health Technologies Pvt. Ltd. *(Dec 2023)*
+
+### Ipools India Pvt. Ltd. *(Oct 2022)*
+
+---
+
+## 🚀 Projects
+
+### OrbitCare – OPD Management Dashboard
+> Medical OPD management system for patient registration, appointments, and doctor workflows
+
+**Stack:** React.js · Tailwind CSS · REST APIs
+
+---
+
+### Orbit Billing System
+> Internal finance tool to generate invoices, manage client records, and track payments
+
+**Stack:** React.js · Tailwind CSS
+
+---
+
+### Salmara – Dashboard & E-commerce *(Live)*
+> Full-stack e-commerce platform with role-based admin dashboard for real-time inventory and sales analytics
+
+**Stack:** React.js · Node.js · MongoDB · Tailwind CSS
+🔗 [Live Demo](https://salmara.uur.co.in/)
+
+---
+
+## 📊 Stats
+
+- **2+** Years of Experience
+- **5+** Projects Shipped
+- **2** Industries (Healthcare & Finance)
+
+---
+
+## 📬 Contact
+
+| Channel | Details |
+|---|---|
+| 📧 Email | [saishree0312@gmail.com](mailto:saishree0312@gmail.com) |
+
+> ⚡ Open to on-site, hybrid & remote opportunities
+
+---
+
+*© 2026 Saishree L. All rights reserved.*
