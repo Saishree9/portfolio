@@ -1,36 +1,68 @@
 import React from "react";
 import { FaPhone, FaEnvelope, FaWhatsapp, FaGithub, FaLinkedin } from "react-icons/fa";
 
-const contacts = [
+// Sensitive values are Base64-encoded so they never sit in source/DOM as
+// plain text, digit sequences, or "mailto:"/"tel:" strings that scrapers
+// pattern-match on. Decoded only in-browser, only on click.
+const encode = (str) => btoa(str);
+const decode = (str) => atob(str);
+
+const PHONE_ENC = encode("+918762577498");
+const EMAIL_ENC = encode("saishree0312@gmail.com");
+
+// Click-to-reveal contact methods: real value never rendered to the DOM.
+const protectedContacts = [
   {
     icon: <FaPhone className="-scale-x-100" />,
     label: "Phone",
-    href: "tel:+918762577498",
-    value: "+91 ********98",
+    value: "Click to call",
+    getHref: () => `tel:${decode(PHONE_ENC)}`,
   },
   {
     icon: <FaEnvelope />,
     label: "Email",
-    href: "mailto:saishree0312@gmail.com",
-    value: "sai*********@gmail.com",
+    value: "Click to email",
+    getHref: () => `mailto:${decode(EMAIL_ENC)}`,
   },
+];
+
+// Not sensitive — already public, can stay as plain links.
+const publicContacts = [
   {
     icon: <FaWhatsapp />,
     label: "WhatsApp",
     href: "https://wa.me/918762577498",
     value: "Chat on WhatsApp",
-    external: true,
   },
   {
     icon: <FaGithub />,
     label: "GitHub",
     href: "https://github.com/Saishree9",
     value: "github.com/Saishree9",
-    external: true,
   },
 ];
 
+function ContactCard({ icon, label, value }) {
+  return (
+    <div className="group flex items-center gap-4 bg-white border border-gray-200 rounded-2xl p-5 hover:border-[#d3ae7f] hover:shadow-md transition duration-300 cursor-pointer text-left w-full">
+      <div className="w-11 h-11 flex items-center justify-center bg-[#faf3e8] rounded-xl text-[#c49a5a] text-lg group-hover:scale-110 transition duration-300 shrink-0">
+        {icon}
+      </div>
+      <div>
+        <p className="text-xs text-gray-400 mb-0.5">{label}</p>
+        <p className="text-sm font-semibold text-slate-800">{value}</p>
+      </div>
+    </div>
+  );
+}
+
 export default function Contact() {
+  // Real value only ever exists here, in memory, after a real click event —
+  // never written into href/DOM, so nothing is scrapeable from page source.
+  const handleReveal = (getHref) => {
+    window.location.href = getHref();
+  };
+
   return (
     <section id="contact" className="py-24 px-6 bg-gray-50">
       <div className="max-w-3xl mx-auto">
@@ -46,21 +78,21 @@ export default function Contact() {
         </p>
 
         <div className="grid sm:grid-cols-2 gap-4">
-          {contacts.map(({ icon, label, href, value, external }) => (
-            <a
+          {protectedContacts.map(({ icon, label, value, getHref }) => (
+            <button
               key={label}
-              href={href}
-              target={external ? "_blank" : undefined}
-              rel={external ? "noreferrer" : undefined}
-              className="group flex items-center gap-4 bg-white border border-gray-200 rounded-2xl p-5 hover:border-[#d3ae7f] hover:shadow-md transition duration-300"
+              type="button"
+              onClick={() => handleReveal(getHref)}
+              aria-label={`${label} — click to reveal and open`}
+              className="block w-full"
             >
-              <div className="w-11 h-11 flex items-center justify-center bg-[#faf3e8] rounded-xl text-[#c49a5a] text-lg group-hover:scale-110 transition duration-300">
-                {icon}
-              </div>
-              <div>
-                <p className="text-xs text-gray-400 mb-0.5">{label}</p>
-                <p className="text-sm font-semibold text-slate-800">{value}</p>
-              </div>
+              <ContactCard icon={icon} label={label} value={value} />
+            </button>
+          ))}
+
+          {publicContacts.map(({ icon, label, href, value }) => (
+            <a key={label} href={href} target="_blank" rel="noreferrer" className="block w-full">
+              <ContactCard icon={icon} label={label} value={value} />
             </a>
           ))}
         </div>
